@@ -1,0 +1,109 @@
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 12px;
+  align-items: center;
+  gap: 24px;
+}
+
+main h1 {
+  text-align: center;
+}
+
+main .products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+main .products .product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 400px;
+  min-width: 300px;
+  width: 25vw;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 4px 4px 12px #322b38, -4px -4px 12px #443b4c;
+}
+
+main .products .product .top {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+main .products .product .top .title {
+  font-size: 18px;
+  font-weight: bold;
+}
+main .products .product .top .description {
+  font-size: 14px;
+  color: rgb(255, 255, 255, 0.8);
+}
+
+main .products .product img {
+  width: 16em;
+  align-self: center;
+}
+
+main .products .product .buy-container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main .products .product .buy {
+  border: 1px solid #67e480;
+  border-radius: 8px;
+  padding: 12px 24px;
+  transition: all 0.2s ease-in-out;
+}
+
+main .products .product .buy:hover {
+  background-color: #67e480;
+}
+
+main .products .product .buy:hover span {
+  color: #fafafa;
+}
+
+main .products .product .buy span {
+  color: #67e480;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+main .products .product .price {
+  font-weight: bold;
+  font-size: larger;
+  color: #67e480;
+}
+
+@media screen and (max-width: 768px) {
+  main .products .product .buy {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+  main h1 {
+    font-size: 24px;
+  }
+}
+
+
+@media screen and (max-width: 1580px) {
+  main .products .product .buy {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  main .products .product .buy {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+}

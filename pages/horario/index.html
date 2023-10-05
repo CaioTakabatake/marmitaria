@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../css/reset.css" />
+  <link rel="stylesheet" href="../../css/header.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Horários | Sabores da Nona</title>
+</head>
+
+<body>
+  <header>
+    <button class="btn_icon_header" onclick="toggleSidebar()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
+        viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+      </svg>
+    </button>
+    <a href="../home/index.html"><img src="../../assets/logo-png.png" alt="" /></a>
+    <nav>
+      <button class="btn_icon_header" onclick="toggleSidebar()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x"
+          viewBox="0 0 16 16">
+          <path
+            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+        </svg>
+      </button>
+      <a href="../home/index.html">Início</a>
+      <a href="../cardapio/index.html">Cardápio</a>
+      <a href="../horario/index.html" class="active">Horários</a>
+      <a href="../localizacao/index.html">Localização</a>
+    </nav>
+  </header>
+  <main>
+    <table>
+      <thead>
+        <tr>
+          <th>Dia da semana</th>
+          <th scope="col">Entrada</th>
+          <th scope="col">Saída</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Segunda</th>
+          <td>10:00</td>
+          <td>15:00</td>
+        </tr>
+        <tr>
+          <th scope="row">Terça</th>
+          <td>10:00</td>
+          <td>15:00</td>
+        </tr>
+        <tr>
+          <th scope="row">Quarta</th>
+          <td>10:00</td>
+          <td>15:00</td>
+        </tr>
+        <tr>
+          <th scope="row">Quinta</th>
+          <td>10:00</td>
+          <td>15:00</td>
+        </tr>
+        <tr>
+          <th scope="row">Sexta</th>
+          <td>10:00</td>
+          <td>15:00</td>
+        </tr>
+        <tr>
+          <th scope="row">Sábado</th>
+          <td colspan="2" class="closed">Fechado</td>
+        </tr>
+        <tr>
+          <th scope="row">Domingo</th>
+          <td colspan="2" class="closed">Fechado</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+  <script src="../../scripts/header.js"></script>
+</body>
+
+</html>

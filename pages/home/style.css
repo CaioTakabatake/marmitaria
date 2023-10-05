@@ -1,0 +1,103 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding-top: 32px;
+}
+
+main .profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+  max-width: 60vw;
+}
+
+main .profile img {
+  width: 24em;
+  animation: move infinite ease-in-out 4s;
+}
+
+main .profile .infos {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+main .profile .infos .show-all {
+  align-self: self-start;
+  border: 1px solid #FFC917;
+  border-radius: 8px;
+  padding: 12px 24px;
+  transition: all 0.2s ease-in-out;
+}
+
+main .profile .infos .show-all:hover {
+  background-color: #FFC917;
+}
+
+main .profile .infos .show-all:hover span {
+  color: #fafafa;
+}
+
+main .profile .infos .show-all span {
+  color: #FFC917;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+main #carouselExampleIndicators {
+  margin: 16px 0;
+  max-width: 64em;
+  align-self: center;
+}
+
+main #carouselExampleIndicators img {
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  main .profile {
+    max-width: 90vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main .profile {
+    margin-top: 100px;
+    flex-direction: column;
+    text-align: center;
+  }
+  main .profile .infos .show-all {
+    align-self: center;
+  }
+  main .profile img {
+    width: 50vw;
+  }
+}
+@media screen and (max-width: 426px) {
+  main .profile img {
+    width: 70vw;
+  }
+
+  main .profile .infos h1 {
+    font-size: 24px;
+  }
+
+  main .profile .infos p {
+    font-size: 14px;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2.4rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

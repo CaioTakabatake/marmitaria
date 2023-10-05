@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/header.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Localização | Sabores da Nona</title>
+  </head>
+  <body>
+    <header>
+      <button class="btn_icon_header" onclick="toggleSidebar()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          fill="currentColor"
+          class="bi bi-list"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+          />
+        </svg>
+      </button>
+      <a href="../home/index.html"
+        ><img src="../../assets/logo-png.png" alt=""
+      /></a>
+      <nav>
+        <button class="btn_icon_header" onclick="toggleSidebar()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            class="bi bi-x"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+        </button>
+        <a href="../home/index.html">Início</a>
+        <a href="../cardapio/index.html">Cardápio</a>
+        <a href="../horario/index.html">Horários</a>
+        <a href="../localizacao/index.html" class="active">Localização</a>
+      </nav>
+    </header>
+    <main>
+      <div class="top">
+        <h1>
+          Encontre-nos Facilmente: Localização da Marmitaria Sabores da Nona
+        </h1>
+        <p>
+          Atualmente estamos localizados na
+          <b
+            >Av. Mal. Castelo Branco, 1000 - Jardim Primavera, Piracicaba - SP,
+            13412-010
+          </b>
+        </p>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.961779577335!2d-47.65037058508694!3d-22.692466685121136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c633d2e3a2001f%3A0x54eb5672924b084f!2sSENAI%20Piracicaba%20Vila!5e0!3m2!1spt-BR!2sbr!4v1679275713573!5m2!1spt-BR!2sbr"
+        width="800"
+        height="500"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </main>
+    <script src="../../scripts/header.js"></script>
+  </body>
+</html>

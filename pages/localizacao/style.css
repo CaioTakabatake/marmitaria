@@ -1,0 +1,34 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  height: calc(100vh - 106px);
+  margin: 0;
+}
+
+main .top {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+main iframe {
+  width: 50vw;
+  height: 65vh;
+}
+
+@media screen and (max-width: 768px) {
+  main .top h1 {
+    font-size: 24px;
+  }
+
+  main .top p {
+    font-size: 12px;
+  }
+
+  main iframe {
+    width: 90vw;
+  }
+}
